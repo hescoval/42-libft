@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	end_loop(char const *s1, char const *set, int *rem_E)
 {

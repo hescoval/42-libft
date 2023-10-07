@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static void	write_to_string(char *ptr, int n, int index, int size)
 {
