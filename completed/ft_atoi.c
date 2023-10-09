@@ -36,3 +36,9 @@ int	ft_atoi(const char *nptr)
 	}
 	return (ret * sign);
 }
+
+/*
+	Very famous function from the piscine, differed a tiny bit from
+	the one we had to use during the exam, seeing as that one does
+	not require you to skip whitespace.
+*/

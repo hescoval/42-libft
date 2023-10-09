@@ -75,3 +75,16 @@ char	*ft_itoa(int n)
 	write_to_string(ptr, n, i, size);
 	return (ptr);
 }
+/*
+	Also one of the function i couldnt get to during the piscine, and had
+	to learn it during Common Core.
+	
+	Pretty happy with my itoa for the most part, i had to resort to using
+	two separate rules for INT_MIN and 0 instead of just INT_MIN, but i
+	think the logic is fairly simple and easy to understand.
+
+	Check_size function to see how much space we need to malloc.
+
+	Write_to_string that will simply write the number from back to front
+	of the aforementioned string.
+*/

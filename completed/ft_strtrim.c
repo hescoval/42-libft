@@ -92,3 +92,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ret[j] = '\0';
 	return (ret);
 }
+/*
+	My logic was to loop through the string from both ends separately, to give me the starting
+	and ending point for my final string, but you can achieve this with strchr and strrchr.
+
+	All the code in this project will remain unchanged, and its just a reminder of my 
+	learning journey.
+*/

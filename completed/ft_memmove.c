@@ -38,3 +38,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*
+	Very good function to learn, helps understand the memory part of programming
+	a tiny bit better, we were forced to not use a temporary array which the 
+	MAN indicates is a viable way to solve the overlap issue, so the mental exercise of
+	visualizing the memory being printed back to front and front to back
+	is very interesting.
+*/

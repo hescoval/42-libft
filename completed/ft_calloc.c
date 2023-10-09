@@ -24,3 +24,13 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	return (ret);
 }
+/*
+	An example of how using our own library becomes insanely useful,
+	luckily i had already done bzero for this one.
+
+	Can prevent overflow by doing a simple check with:
+
+	(nmemb * size) / size == nmemb 
+
+	If this doesnt prove true, the multiplication has overflowed and can return an error or NULL.
+*/

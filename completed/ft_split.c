@@ -121,3 +121,20 @@ char	**ft_split(char const *s, char c)
 	fill_strings(ret, s, c);
 	return (ret);
 }
+/*
+	One of the more annoying functions i felt like as a beginner, i didnt get
+	this one done during the piscine so i had to learn it in the Common Core.
+
+	Was fairly straight forward now, as splitting the logic concisely into 
+	different function heavily helped helped.
+
+	Had some difficulties passing francinettes --strict but also helped me 
+	learning how to properly free Arrays of Arrays.
+
+	Check_splits function to know how many Arrays we need to allocate for.
+	Make strings function to allocate memory individually for each of those Arrays.
+	Fill strings function to fill the strings and Null terminate all of them.
+
+	malloc has an added + 1 to check_splits result because the subject asks us
+	to terminate the array with a null pointer.
+*/

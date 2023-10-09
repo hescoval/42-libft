@@ -33,3 +33,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ret[copied] = '\0';
 	return (ret);
 }
+
+/*
+	Another function that was semi-annoying cause i still didnt understand
+	the different between a NULL return and an Empty String (silly me),
+	but after that, mallocing a single byte for the '\0' was the solution
+	that had causing me problems for a bit.
+*/
