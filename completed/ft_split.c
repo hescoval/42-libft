@@ -1,5 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hescoval <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/07 16:01:19 by hescoval          #+#    #+#             */
+/*   Updated: 2023/10/07 16:01:20 by hescoval         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-#include <stdlib.h>
+
+static void	free_ret(char **ret)
+{
+	int	i;
+
+	i = 0;
+	while (ret[i])
+		free(ret[i++]);
+	free(ret);
+}
 
 static void	fill_strings(char **strings, const char *s, char c)
 {
@@ -92,6 +113,7 @@ char	**ft_split(char const *s, char c)
 	{
 		if (ret[i] == NULL)
 		{
+			free_ret(ret);
 			return (NULL);
 		}
 		i++;

@@ -1,40 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hescoval <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 19:50:40 by hescoval          #+#    #+#             */
-/*   Updated: 2023/10/05 19:50:41 by hescoval         ###   ########.fr       */
+/*   Created: 2023/10/09 15:09:25 by hescoval          #+#    #+#             */
+/*   Updated: 2023/10/09 15:09:55 by hescoval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_lstsize(t_list *lst)
 {
-	char	toprint;
+	int	i;
 
-	if (n == -2147483648)
+	i = 0;
+	while (lst != NULL)
 	{
-		write(fd, "-2147483648", 11);
-		return ;
+		i++;
+		lst = lst->next;
 	}
-	if (n < 0)
-	{
-		write(fd, "-", 1);
-		n *= -1;
-	}
-	if (n >= 10)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		toprint = n % 10 + 48;
-		write(fd, &toprint, 1);
-	}
-	else
-	{
-		toprint = n + 48;
-		write(fd, &toprint, 1);
-	}
+	return (i);
 }
