@@ -1,8 +1,8 @@
 # 42-libft
 My first project at 42 Porto, making my own library with set functions to help me throughout future projects.
 
-## NORMINETTE
-At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
+## The NORMINETTE
+All the code you will see in 42 repositories will be written according to the schools formatting norm, also called the Norminette.
 
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
