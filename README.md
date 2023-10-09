@@ -2,7 +2,7 @@
 My first project at 42 Porto, making my own library with set functions to help me throughout future projects.
 
 ## The NORMINETTE
-All the code you will see in 42 repositories will be written according to the schools formatting norm, also called the Norminette.
+All the code you will see in 42 repositories will be written according to the schools formatting norm, also called, "Norminette".
 
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
